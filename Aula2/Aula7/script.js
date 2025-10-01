@@ -7,7 +7,7 @@ const res = primeiroN+segundoN+4//cria a variavel resultado para a soma expressa
 console.log(res)//imprimi o valor resultante*/
 
 //SUBTRAÇÃO
-const primeiroNumero = 10 //cria a primeira variavel de valor 10
+/*const primeiroNumero = 10 //cria a primeira variavel de valor 10
 const segundoNumero = 20//cria a segunda variavel de valor 20
 
 const resultado = primeiroNumero-segundoNumero//cria a variavel resultado para a soma expressa
@@ -46,7 +46,7 @@ resultadoSimples -= 30
 console.log(resultadoSimples)
 
 resultadoSimples /= 3
-console.log(resultadoSimples)
+console.log(resultadoSimples)*/
 
 
 
@@ -59,14 +59,39 @@ const segundoN = 3
 const res = primeiroN+segundoN
 
 console.log(res)
+
 //2. Multiplicar 3 com 5 e dividir o resultado por 2
 const valorA = 3
 const valorB = 5
 const valorC = 2
 
+const r = valorA*valorB/2
 
-
+console.log(r)
 
 //3. Subtrair 5 de 4 e multiplicar o resultado por -1
 
+const vA = 4
+const vB = 5
+const vC = -1
+
+const Res = (vA-vB)*vC
+
+console.log(Res)
+
 //4. Determinar o resto da divisão de 234 por 5
+
+const valA = 234
+const valB = 5
+
+const resu = valA%valB
+
+console.log(resu)
+
+/*Outra maneira de calcular
+let calculo1 = 3+4
+let calculo2 = (3*5) / 2
+let calculo3 = (4-5) * -1
+let calculo4 = 234 % 5
+
+console.log(calculo1, calculo2, calculo3, calculo4)*/
