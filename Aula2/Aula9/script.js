@@ -110,10 +110,14 @@ Nome: Lais ; Idade: 23 ; É maior de idade? True ; Idade em 2050: 52 */
 
 let nome = prompt("Qual é seu nome?")
 let anoNascimento = Number(prompt("Qual seu ano de nascimento"))
-let idade = Number(prompt("Qual sua idade?"))
+let anoAtual = prompt("Em que ano estamos?")
 
+let idade = anoAtual - anoNascimento
+let verificarMaiorDeIdade = idade >= 25
+let idadeEm2050 = 2050 - anoNascimento
 
-console.log("Nome", nome)
+console.log("Nome", nome, "idade", idade, "maior de idade?", verificarMaiorDeIdade, "idade em 2050", idadeEm2050)
+
 
 
 
