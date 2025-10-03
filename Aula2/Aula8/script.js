@@ -70,4 +70,3 @@ console.log("O primeiro número é diferente do segundo?", numero1!==numero2)
 console.log("O primeiro número é maior que o segundo?,", numero1>numero2)
 //4. O primeiro número é menor que o segundo? True/False
 console.log("O primeiro número é menor que o segundo?", numero1<numero2)
-
