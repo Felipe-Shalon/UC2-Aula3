@@ -36,10 +36,10 @@ c) Imprima no console a seguinte mensagem: "Sua idade é maior do que a do
 seu melhor amigo?", seguido pela resposta (true ou false)
 d) Imprima no console a diferença de idade (não tem problema se sair um
 número negativo)*/
-/*let idade = prompt("Qual sua idade?")
+let idade = prompt("Qual sua idade?")
 let idadeAmigo = prompt("Qual a idade do meu melhor amigo?")
 console.log(idade >= idadeAmigo)
-console.log(idade !== idadeAmigo)*/
+console.log(idade !== idadeAmigo)
 
 /*2) Faça um programa que:
 a) Peça ao usuário que insira um número par;
@@ -99,7 +99,7 @@ c) Calcule e mostre o valor de 30°C em °F e K, mostrando as unidades no consol
 também;
 d) Altere o último item para que o usuário insira o valor em graus Celsius que ele
 deseja converter;*/
-let fahrenheit = 77
+/*let fahrenheit = 77
 let celsius = 80
 let celsius2 = 30
 console.log("77°F em K° é", ((KELVIN) = (fahrenheit - 32)*(5/9) + 273.15))
@@ -115,7 +115,7 @@ quilowatt-hora
 b) Altere o programa para receber mais um valor: a porcentagem de desconto.
 Calcule e mostre o valor a ser pago pela mesma residência acima considerando 15% de
 desconto*/
-let quilowattH = 0.05
+/*let quilowattH = 0.05
 let consumo = quilowattH * 280
 console.log("280 horas de consumo vai resultar em", consumo, "reais, com desconto de 15% fica em", (consumo * 15 / 100 -14))
 
@@ -164,4 +164,5 @@ console.log("450 xic equivalem a", xic * litroParaXicara, "litros")
 peça ao usuário o valor da unidade original antes de converter*/
 let metros = prompt("Diga quantos metros você quer converter para pés(ft)")
 let metrosEmFt1 = metros * 3.281
+console.log("Diga quantos metros você quer converter para pés(ft)?", metrosEmFt1)
 console.log("Diga quantos metros você quer converter para pés(ft)?", metrosEmFt1)
