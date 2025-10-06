@@ -162,3 +162,6 @@ let litroParaXicara = 0.24
 console.log("450 xic equivalem a", xic * litroParaXicara, "litros")
 /*g) Escolha ao menos um dos itens anteriores e modifique o programa para que ele
 peça ao usuário o valor da unidade original antes de converter*/
+let metros = prompt("Diga quantos metros você quer converter para pés(ft)")
+let metrosEmFt1 = metros * 3.281
+console.log("Diga quantos metros você quer converter para pés(ft)?", metrosEmFt1)
