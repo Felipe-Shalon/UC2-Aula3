@@ -40,6 +40,7 @@ let idade = prompt("Qual sua idade?")
 let idadeAmigo = prompt("Qual a idade do meu melhor amigo?")
 console.log(idade >= idadeAmigo)
 console.log(idade !== idadeAmigo)
+console.log(idade - idadeAmigo)
 
 /*2) Faça um programa que:
 a) Peça ao usuário que insira um número par;
@@ -48,8 +49,8 @@ c) Teste o programa com diversos números pares. Você notou um padrão?
 Escreva em um comentário de código;
 d) O que acontece se o usuário inserir um número ímpar? Escreva em um
 comentário de código;*/
-//let numeroPar = prompt("Diga um número par")
-//console.log(numeroPar / 2)
+let numeroPar = prompt("Diga um número par")
+console.log(numeroPar % 2)
 //Sempre vai ser divisivel por 2
 //Ao adicionar um número impar, ele divide da mesma maneira.
 
@@ -67,7 +68,6 @@ console.log("Qual sua idade em anos?", idadeEmAnos)
 console.log("Qual sua idade em meses?", idadeEmMeses)
 console.log("Qual sua idade em dias?", idadeEmDias)
 console.log("Qual sua idade em horas?", idadeEmHoras)*/
-
 
 /*4) Faça um programa que pergunte ao usuário dois números. Em seguida, faça as
 operações e imprima no console as seguintes mensagens seguidas pelo true ou
