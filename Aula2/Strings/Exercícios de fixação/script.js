@@ -50,8 +50,6 @@ console.log(frase)
 /*c) Aqui vai um desafio: pergunte ao usuário uma comida preferida. Troque a
 segunda comida da sua lista pela inserida pelo usuário. Imprima no console a
 nova lista*/
-const pergunta = prompt("Qual sua comidade preferida?")
-
 
 /*5. Faça um programa, seguindo os passos:
 a) Crie um array vazio e guarde-o em uma variável, chamada `listaDeTarefas`.
@@ -61,3 +59,26 @@ c) Imprima o array no console.
 d) Peça ao usuário que digite o índice da tarefa que ele já realizou: 0, 1 ou 2.
 e) Remova da lista o item de índice que o usuário escolheu.
 f) Imprima o array no console.*/
+const listaDeTarefas = []
+const tarefa1 = prompt("Diga sua primeira tarefa do dia")
+const tarefa2 = prompt("Diga sua segunda tarefa do dia")
+const tarefa3 = prompt("Diga sua terceira tarefa do dia")
+listaDeTarefas.push(tarefa1, tarefa2, tarefa3)
+console.log(listaDeTarefas)
+
+const numeroTarefa = Number(prompt("Digite o número da tarefa que você já realizou: 0, 1 ou 2"))
+listaDeTarefas.splice(numeroTarefa, 1)
+console.log(listaDeTarefas)
+
+
+
+
+
+/*const listaDeTarefas = []
+const tarefas = prompt("Diga três tarefas que você precisa realizar no dia")
+listaDeTarefas.push(tarefas)
+console.log(tarefas)
+
+const numeroTarefa = Number(prompt("Digite o número da tarefa que você já realizou: 0, 1 ou 2"))
+listaDeTarefas.splice(numeroTarefa)
+console.log(numeroTarefa , listaDeTarefas)*/
