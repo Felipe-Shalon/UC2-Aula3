@@ -47,3 +47,5 @@ let listras = possuiListras.indexOf("listras") !==-1
 console.log("Tem a palavra brilho?", existeBrilho, "Tem a palavra listras?", possuiListras)
 /*Cria a variável booleana final (lookAprovado) combinando as verificações:
   Aprovação = Tem Tamanho Adequado&&(Tem brilho || Tem Listras)*/
+let aprovado = temTamanhoAdequado && (possuiBrilho || possuiListras)
+console.log("Aprovado:", aprovado)
