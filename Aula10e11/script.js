@@ -285,19 +285,19 @@ EXERCICIOS DE FIXAÇÃO
 Exercícios de interpretação de código
 1. Teste de números:
 a) Explique o que o código faz. Qual o teste que ele realiza?
-Testa se o numero digita é divisivel por 2
+Testa se o numero digitado é divisivel por 2
 b) Para que tipos de números ele imprime no console "Passou no teste"?
 Numeros divisiveis por 2.
 c) Para que tipos de números a mensagem é "Não passou no teste"?
 Numeros nao divisiveis por 2*/
 
-const respostaDoUsuario = prompt("Digite o número que você quer testar")
+/*const respostaDoUsuario = prompt("Digite o número que você quer testar")
 const numero = Number(respostaDoUsuario)
 if (numero % 2 === 0){
     console.log("Passou no teste.")
 } else {
     console.log("Não passou no teste.")
-}
+}*/
 
 /*Exercícios de interpretação
 2. Mercado
@@ -355,28 +355,28 @@ number para isso.*/
 /*c) Agora veja se essa idade do usuário corresponde à idade mínima que permite
 dirigir. Se sim, imprima no console `"Você pode dirigir"`, caso contrário, imprima
 `"Você não pode dirigir."`*/
-let idade = Number(prompt("Me diga sua idade."))
+/*let idade = Number(prompt("Me diga sua idade."))
 if (idade > 17){
 console.log("Você pode dirigir")
 } else {
     console.log("Você não pode dirigir.")
-}
+}*/
 /*5. Agora faça um programa que verifica que turno do dia um aluno estuda. Peça
 para digitar M (matutino) ou V (Vespertino) ou N (Noturno). Imprima no console a
 mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco if/else.*/
-let turno1 = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?").toLowerCase()
+/*let turno1 = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?").toLowerCase()
 let mensagem
 if (turno1 === "m") {
     mensagem = "Bom dia"
 } else if (turno1 === "v") {
     mensagem = "Boa tarde."
 } else if (turno1 === "n") {
-    memsagem = "Boa noite"
+    mensagem = "Boa noite"
 } else {
     mensagem = "Turno inválido." }
-console.log(mensagem)
+console.log(mensagem)*/
 //6. Repita o exercício anterior, mas utilizando a estrutura de switch case agora.
-let turno = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?")
+/*let turno = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?")
 switch (turno.toLowerCase()){
     case "m" :
         console.log("Bom dia.")
@@ -390,7 +390,7 @@ switch (turno.toLowerCase()){
     default:
         console.log("Turno não encontrado.")
         break;
-}
+}*/
 /*7. Considere a situação: você vai ao cinema com um amigo ou amiga, porém
 ele/ela só assistirá a um filme com você se ele for do gênero fantasia e se o
 ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuário qual o
@@ -398,10 +398,82 @@ gênero de filme que vão assistir e outra pergunta sobre o preço do ingresso,
 então verifique se seu amigo ou amiga vai topar assistir o filme. Caso positivo,
 imprima no console a mensagem: "Bom filme!", caso contrário, imprima "Escolha
 outro filme :("*/
-let genero = prompt("Qual gênero do filme?")
+/*let genero = prompt("Qual gênero do filme?")
 let ingresso = Number(prompt("Qual preço do ingresso?"))
-if (genero.toLowerCase() === "fantasia" && preco < 15) {//&& as duas condiçoes precisam ser verdadeiras
+if (genero.toLowerCase() === "fantasia" && ingresso < 15) {//&& as duas condiçoes precisam ser verdadeiras
     console.log("Bom filme.")
 } else {
     console.log("Escolha outro filme")
+}*/
+/*DESAFIO
+1. Modifique o código do exercício 7 de escrita de código para, antes de imprimir
+a mensagem "Bom filme!", pergunte ao usuário, pelo prompt qual lanchinho ele
+vai comprar (pipoca, chocolate, doces, etc) e imprima no console as mensagens
+"Bom filme!" e "Aproveite o seu [LANCHINHO]", trocando [LANCHINHO] pelo
+que o usuário colocou no input.*/
+/*let generoo = prompt("Qual gênero do filme?")
+let lanche = prompt("Qual lanche vai comprar para assistir o filme?")
+let ingressoo = Number(prompt("Qual preço do ingresso?"))
+if (generoo.toLowerCase() === "fantasia" && ingressoo <= 15) { //&& as duas condiçoes precisam ser verdadeiras
+    console.log("Bom filme e aproveite a/o", lanche)
+} else {
+    console.log("Escolha outro filme")
+}*/
+
+/*2. Você foi contratado para criar um sistema de vendas de ingressos de jogos de
+um estádio de futebol. Para esta compra, o usuário deve fornecer algumas
+informações:
+Nome completo; 
+Tipo de jogo: IN indica internacional e DO indica doméstico;
+Etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final.
+Categoria: pode ser as opções 1, 2, 3 ou 4;
+Quantidade de ingressos.
+2. O seu sistema deve solicitar estas informações ao usuário, através do prompt .
+Além disso, ele deve imprimir tudo isso, junto com o valor de cada ingresso e o
+valor total que o usuário tem que pagar (ou seja, o valor unitário do ingresso
+multiplicado pela quantidade). Abaixo, há a tabela com os valores de cada
+ingresso. Lembrando que o valor de jogos internacionais é o mesmo de jogos
+domésticos, mas seus preços devem ser multiplicados pelo valor do dólar
+(considerar o dólar = R$5,65).
+Público           Jogo          | CATEGORIA 1 | CATEGORIA 2 | CATEGORIA 3 | CATEGORIA 4
+DO              SF - SEMIFINAIS | 1.320,00    | 880,00      | 550,00      | 220,00
+(doméstico)     DT - DECISÃO 3° | 660,00      | 440,00      | 330,00      | 170,00
+                FI - FINAL      | 1.980,00    | 1.320,00    | 880,00      | 330,00*/
+// Sistema de vendas de ingressos - Copa
+
+// Cotação do dólar
+const dolar = 5.95
+
+// Entrada de dados
+let nome = prompt("Qual é o seu nome completo?")
+let tipoJogo = prompt("Qual o tipo de jogo? (IN = Internacional | DO = Doméstico)").toUpperCase()
+let etapaJogo = prompt("Qual a etapa do jogo? (SF = Semifinal | DT = Decisão 3º lugar | FI = Final)").toUpperCase()
+let categoria = Number(prompt("Qual a categoria? (1, 2, 3 ou 4)"))
+let qtdIngressos = Number(prompt("Quantos ingressos você quer comprar?"))
+
+// Tabela de preços (em reais)
+let tabela = {
+  SF: { 1: 1320, 2: 880, 3: 550, 4: 220 },
+  DT: { 1: 660, 2: 440, 3: 330, 4: 170 },
+  FI: { 1: 1980, 2: 1320, 3: 880, 4: 330 }
 }
+// Valor base do ingresso
+let valorUnitario = tabela[etapaJogo][categoria]
+// Conversão para jogo internacional
+if (tipoJogo === "IN") {
+  valorUnitario *= dolar
+}
+// Cálculo total
+let valorTotal = valorUnitario * qtdIngressos
+// Impressão das informações
+console.log(`Nome do cliente: ${nome}`)
+console.log(`Tipo de jogo: ${tipoJogo === "IN" ? "Internacional" : "Doméstico"}`)
+console.log(`Etapa do jogo: ${
+  etapaJogo === "SF" ? "Semifinal" :
+  etapaJogo === "DT" ? "Decisão 3º lugar" :
+  "Final"
+}`)
+console.log(`Categoria: ${categoria}`)
+console.log(`Quantidade de ingressos: ${qtdIngressos}`)
+console.log(`Valor do ingresso: ${tipoJogo === "IN" ? "US$" : "R$"} ${valorUnitario.toFixed(2)}`)
+console.log(`Valor total: ${tipoJogo === "IN" ? "US$" : "R$"} ${valorTotal.toFixed(2)}`)
