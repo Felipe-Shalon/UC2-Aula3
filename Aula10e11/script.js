@@ -111,7 +111,7 @@ Todo código da ação vai entre chaves { }
 
 if + else + if
 Todo código da ação vai entre chaves { }*/
-let condicaoA = false
+/*let condicaoA = false
 let condicaoB = true
 let condicaoC = true
 if(condicaoA){
@@ -123,7 +123,7 @@ else if(condicaoC){
     console.log("Entrou no ElSE IF 2")
 }
 else
-console.log("Entrou no ELSE")
+console.log("Entrou no ELSE")*/
 //1. Crie um programa que:
 //a) Recebe 2 números (chamaremos de num1 e num2)
 /*const numeroA = Number(prompt("Digite o primeiro número."))
@@ -228,7 +228,7 @@ Relembrando Operadores Lógicos
 ● ! : NOT negação - sua função é simplesmente inverter os valores.
 Como os operadores lógicos retornam booleanos, conseguimos usá-los
 diretamente na condição dos blocos if/else*/
-let condicao1 = true
+/*let condicao1 = true
 let condicao2 = true
 if (condicao1&&condicao2){
     console.log("Executou if do operador && AND")
@@ -238,22 +238,22 @@ if (!condicao1 || condicao2){
 }
 if(!condicao1){
     console.log("Executou o if do operador ! NOT")
-}
+}*/
 /*Exercícios
 Uma pessoa pode estudar em uma faculdade se:*/
 //● Tiver concluído o ensino médio;
-const ensino = prompt("concluiu o ensino médio?").toLowerCase() === "sim"
+/*const ensino = prompt("concluiu o ensino médio?").toLowerCase() === "sim"
 //● Tiver 18 anos ou mais;
 const idade = Number(prompt("Digite sua idade")) >= 18
 //● Não estiver cursando outra faculdade;
-const faculdade = prompt("Você faz faculdade?").toLowerCase() === "sim"
+const faculdade = prompt("Você faz faculdade?").toLowerCase() === "sim"*/
 /*Escreva um programa que receba estes parâmetros e imprima se a pessoa pode
 ou não estudar nesta faculdade. Receba os dados do usuário pelo prompt.*/
-if(ensino && !faculdade){
+/*if(ensino && !faculdade){
     console.log("Você pode estudar nessa faculdade")
 }else{
     console.log("Você não pode estudar nessa faculdade")
-}
+}*/
 /*Resumo
 
 Operadores de comparação são usados para se compararem valores de mais de
@@ -285,8 +285,11 @@ EXERCICIOS DE FIXAÇÃO
 Exercícios de interpretação de código
 1. Teste de números:
 a) Explique o que o código faz. Qual o teste que ele realiza?
+Testa se o numero digita é divisivel por 2
 b) Para que tipos de números ele imprime no console "Passou no teste"?
+Numeros divisiveis por 2.
 c) Para que tipos de números a mensagem é "Não passou no teste"?
+Numeros nao divisiveis por 2*/
 
 const respostaDoUsuario = prompt("Digite o número que você quer testar")
 const numero = Number(respostaDoUsuario)
@@ -299,10 +302,13 @@ if (numero % 2 === 0){
 /*Exercícios de interpretação
 2. Mercado
 a) Para que serve o código?
+O código serve para indicar o valor da fruta escolhida pelo usuário
 b) Qual será a mensagem impressa no console, se o valor de fruta for `"Maçã"`?
+Sera indica o preco da maçã.
 c) Qual seria a mensagem impressa no console se comprasse
-`pera`e retirássemos o `break` que está logo acima do `default` ("BREAK PARA O ITEM c.")?*/
-let fruta = prompt("Escolha uma fruta")
+`pera`e retirássemos o `break` que está logo acima do `default` ("BREAK PARA O ITEM c.")?
+*/
+/*let fruta = prompt("Escolha uma fruta")
 let preco 
 switch (fruta){
     case "Laranja" :
@@ -321,36 +327,81 @@ switch (fruta){
         preco = 5
         break;
 }
-console.log("O preço da fruta", fruta, " é ", "R$", preco)
+console.log("O preço da fruta", fruta, " é ", "R$", preco)*/
 /*3. Mensagem Secreta
 a) O que a primeira linha está fazendo?
+A primeira linha esta solicitando para o usuário digitar um número.
 b) Considere um usuário digitou o número 10. Qual será a mensagem do
 terminal? E se fosse o número -10?
+Se o número digitado for 10, ele ira passar no teste pois é maior que 0.
+Se o numero digitado for -10 ele ira reprovar pois é menos que 0.
 c) Haverá algum erro no console? Justifique usando os conceitos de bloco ou
-escopo.*/
-const numero = Number(prompt("Digite o primeiro número."))
+escopo.
+Console.log(mensagem) deve estar dentro do escopo.
+*/
+/*const numero = Number(prompt("Digite o primeiro número."))
 if (numero > 0){
     console.log("Esse número passou no teste")
     let mensagem = "Essa mensagem é secreta!!!"
+    
 }
-
+console.log(mensagem)*/
 /*Exercícios de escrita de código
 4. Faça um programa que pergunta ao usuário qual a idade dele e imprima no
-console se ele/ela pode dirigir (apenas maiores de idade).
-a) Faça um `prompt` para receber a idade do usuário e guarde em uma variável.
-b) Garanta que essa variável é do tipo `Number`, você deve usar o cast para
-number para isso.
-c) Agora veja se essa idade do usuário corresponde à idade mínima que permite
+console se ele/ela pode dirigir (apenas maiores de idade).*/
+//a) Faça um `prompt` para receber a idade do usuário e guarde em uma variável.
+/*b) Garanta que essa variável é do tipo `Number`, você deve usar o cast para
+number para isso.*/
+/*c) Agora veja se essa idade do usuário corresponde à idade mínima que permite
 dirigir. Se sim, imprima no console `"Você pode dirigir"`, caso contrário, imprima
-`"Você não pode dirigir."`
-5. Agora faça um programa que verifica que turno do dia um aluno estuda. Peça
+`"Você não pode dirigir."`*/
+let idade = Number(prompt("Me diga sua idade."))
+if (idade > 17){
+console.log("Você pode dirigir")
+} else {
+    console.log("Você não pode dirigir.")
+}
+/*5. Agora faça um programa que verifica que turno do dia um aluno estuda. Peça
 para digitar M (matutino) ou V (Vespertino) ou N (Noturno). Imprima no console a
-mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco if/else.
-6. Repita o exercício anterior, mas utilizando a estrutura de switch case agora.
-7. Considere a situação: você vai ao cinema com um amigo ou amiga, porém
+mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco if/else.*/
+let turno1 = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?").toLowerCase()
+let mensagem
+if (turno1 === "m") {
+    mensagem = "Bom dia"
+} else if (turno1 === "v") {
+    mensagem = "Boa tarde."
+} else if (turno1 === "n") {
+    memsagem = "Boa noite"
+} else {
+    mensagem = "Turno inválido." }
+console.log(mensagem)
+//6. Repita o exercício anterior, mas utilizando a estrutura de switch case agora.
+let turno = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?")
+switch (turno.toLowerCase()){
+    case "m" :
+        console.log("Bom dia.")
+        break;
+    case "v" :
+        console.log("Boa tarde.") 
+        break;
+    case "n" :
+        console.log("Boa noite.")
+        break;
+    default:
+        console.log("Turno não encontrado.")
+        break;
+}
+/*7. Considere a situação: você vai ao cinema com um amigo ou amiga, porém
 ele/ela só assistirá a um filme com você se ele for do gênero fantasia e se o
 ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuário qual o
 gênero de filme que vão assistir e outra pergunta sobre o preço do ingresso,
 então verifique se seu amigo ou amiga vai topar assistir o filme. Caso positivo,
 imprima no console a mensagem: "Bom filme!", caso contrário, imprima "Escolha
-outro filme :(" */
+outro filme :("*/
+let genero = prompt("Qual gênero do filme?")
+let ingresso = Number(prompt("Qual preço do ingresso?"))
+if (genero.toLowerCase() === "fantasia" && preco < 15) {//&& as duas condiçoes precisam ser verdadeiras
+    console.log("Bom filme.")
+} else {
+    console.log("Escolha outro filme")
+}
