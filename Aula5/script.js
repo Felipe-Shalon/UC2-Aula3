@@ -1,0 +1,93 @@
+/*INTERPRETAÇÃO E ESCRIRTS DE CÓDIGO
+Exercícios de interpretação de código.*/
+//---1
+let a = 10 //let cria variavel A de valor 10 que pode ser alterada ao decorrer
+let b = 10 //let cria variavel B de valor 10 que pode ser alterada ao decorrer
+console.log(b) //imprimi variavel A de valor 10
+
+b = 5 //variavel B de valor 5
+console.log(a, b)//imprimi as variaveis A e B de valores 10
+//---2
+let c = 10 //let cria variavel C de valor 10 que pode ser alterada ao decorrer
+let d = 20 //let cria variavel D de valor 10 que pode ser alterada ao decorrer
+c = a //variavel C de valor igual A
+b = c //variavel B de valor igual C
+a = b //variavel A de valor igual B
+console.log(a, b, c) //imprimi as variaveis A, B, C
+//---3
+/*Analise o programa abaixo, entenda o que ele faz e sugira nomes melhores para as
+variáveis (let p e let t). Lembre-se que devemos escolher nomes significativos, usar o padrão camelCase.
+Alem disso, os nomes não podem começar com números ou caracteres especiais.*/
+let horasTrabalhadas = prompt("Quantas horas você trabalha por dia?")
+//let informa uma variável 'p' onde o 'p' indica quantas horas são trabalhadas por dia
+let diasTrabalhados = prompt("Quanto você recebe por dia?")
+//let informa uma variável 't' onde o 't' indica quanto se recebe por dia trabalhados.
+console.log("Você recebe", horasTrabalhadas, "por dia e trabalha", diasTrabalhados)
+//console.log imprimi quanto a pessoa recebe por dia e por hora.
+//pode-se substituir 'p' por 'horasTrabalhadas' e 't' por 'diasTrabalhados.
+
+/*Exercícios de escrita de código
+1) Construa um programa, seguindo os seguintes passos:
+1. Declare uma variável para armazenar um nome, sem atribuir um valor.*/
+let nome
+//2. Declare uma variável para armazenar uma idade, sem atribuir um valor.
+let idade
+//3. Imprima na tela o tipo dessas variáveis que acabou de criar, usando o comando `typeof`.
+console.log(typeof (nome), typeof(idade))
+/*4. Reflita: por que esse tipo foi impresso? Escreva a resposta em um comentário de código.
+Refere-se a uma variável que foi declarada, mas ainda não recebeu um valor,
+ou a um valor que é inerentemente sem definição ou não pode ser determinado*/
+//5. Pergunte ao usuário seu nome e sua idade, atribuindo esses dois valores às variáveis que acabou de criar.
+nome = prompt("Qual seu nome?")
+idade = prompt("Qual sua idade?")
+//6. Imprima na tela o tipo dessas variáveis. Escreva em um comentário de código.
+//nome e idade vão ser string
+/*7. Para finalizar, imprima na tela a mensagem: "Olá `nome`, você tem `idade` anos". Onde
+`nome` e `idade` são os valores que o usuário inseriu.*/
+console.log("Olá", "meu nome é", nome, "e tenho", idade, "anos")
+
+/*2) Escreva um programa que faça 3 perguntas de Sim ou Não, armazenado em uma
+variável. Por exemplo: "Você está usando uma roupa azul hoje?". Depois, siga os passos:*/
+pergunta1 = prompt("Você tem 26 anos?")
+pergunta2 = prompt("Você é baixo?")
+pergunta3 = prompt("Você é vegano?")
+//a) Crie três novas variáveis, contendo as respostas
+resposta1 = pergunta1
+resposta2 = pergunta2
+resposta3 = pergunta3
+/*b) Imprima na tela todas as perguntas seguidas por suas respectivas respostas. Por
+exemplo:
+Você está usando uma roupa azul hoje? - SIM*/
+console.log("Você tem 26 anos?", resposta1)
+console.log("Você é baixo?", resposta2)
+console.log("Você é vegano?", resposta3)
+
+/*3) Suponha que temos duas variáveis a e b, cada uma com um valor inicial.
+let a = 10
+let b = 25
+Agora, queremos trocar os valores delas, de forma que `a` passe a ter o valor de `b` e `b`
+passe a ter o valor de `a`. Ou seja, no caso desse exemplo acima, `a` passaria a ser 25 e `b`
+passaria a ser 10.*/
+let valorA = 10
+let valorB = 25
+let valorC = 15
+console.log(valorA - valorC)
+//Depois de trocados, teremos o seguinte resultado:
+console.log("O novo valor de a é", a) //O novo valor de 'a' é 25
+console.log("O novo valor de b é", b) //O novo valor de 'b' é 10
+
+/*Desafio Opcional!
+Faça um programa que receba dois números do usuário e faça as seguintes operações,
+imprimindo os resultados no console da seguinte forma:
+1. O primeiro número somado ao segundo número resulta em: x.
+let numero1 = prompt("Digite o número 1")
+let numero2 = prompt("Digite o número 2")
+2. O primeiro número multiplicado pelo segundo número resulta em: y.*/
+let primeiroNumero = Number(prompt("Digite um número:"))
+let segundoNumero = Number(prompt("Digite outro número:"))
+
+let somaDosNumeros = primeiroNumero + segundoNumero
+let multiplicacoDosNumeros = primeiroNumero * segundoNumero
+
+console.log("A soma do primeiro número com o segundo número resulta em", somaDosNumeros)
+console.log("A multiplicação do primeiro número com o segundo número resulta em", multiplicaaooDosNumeros)
