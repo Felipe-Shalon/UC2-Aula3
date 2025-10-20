@@ -62,7 +62,7 @@ const fraseMaiuscula = frase.toLowerCase() // fraseMaiuscula = oieeeeee!
 O método toUpperCase() transforma todas as letras da sua string em maiúsculas.
 
 const frase = "OieEeEee!"
-const fraseMinuscula = frase.toLowerCase() // fraseMinuscula = oieeeeee!
+const fraseMinuscula = frase.toUpperCase() // fraseMinuscula = OIEEEEEE!
 
 ---Método trim()
 O método trim() retira os espaços que existem antes e depois da sua string.
@@ -91,9 +91,13 @@ Peça para o usuário escrever uma frase e imprima no console a frase alterada,
 com:
 ● Todas as letras maiúsculas;
 ● Na língua do i (substituindo a vogal "o" por "i");
-● O tamanho da frase.
-
-Resumo
+● O tamanho da frase.*/
+const frase = prompt("Escreva uma frase")
+const fraseMaiuscula = frase.toUpperCase()
+const fraseNova = frase.replace()
+const tamanhoFrase = frase.lenght
+console.log(frase, fraseMaiuscula, fraseNova, tamanhoFrase)
+/*Resumo
 Existem 3 Maneiras de escrever Strings:
 Aspas duplas, Aspas simples e Crase;
 
@@ -147,9 +151,13 @@ const segundoItem = listaDeCompras[2] // "Tomate"
 ---Exercícios
 1. Crie um array com pelo menos 5 raças de cachorro.
 2. Peça para o usuário inserir um número de 0 a 4 e Imprima no console a raça
-correspondente à posição escolhida pelo usuário.
+correspondente à posição escolhida pelo usuário.*/
+const cachoros = ["pinscher", "pitbull", "poodle", "buldog", "golden"]
+const numeroCachorro = Number(prompt("Escolha um número de 0 a 4"))
+const cachorroEscolhido = cachorros[Number]
+console.log("Cachorros listados são: ", cachoros, "O número escolhido é:", numeroCachorro, "sendo o cachorro escolhido: ", cachorroEscolhido)
 
----Resumo
+/*---Resumo
 Arrays são listas que podem conter elementos de qualquer tipo (strings,
 números, etc).
 Para acessar um elemento de um array, utilizamos a sua posição (ou índice).
@@ -200,18 +208,17 @@ letras.splice(2, 1)
 letras.splice(3, 2) // letras = ["A", "B", "D", "G", "H"]
 
 ---Exercícios
-
 Para este exercício, comece criando um array com os valores: 1, 2, 3, 4, 5 e 6.
-
 1. Determine o tamanho do array.
-
-2. Adicione o número 7.
-
+2. Adicione o número 7
 3. Remova os números 4 e 5.
-
-4. Determine o novo tamanho do array.
-
----Resumo
+4. Determine o novo tamanho do array.*/
+const valores = [1, 2, 3, 4, 5, 6]
+console.log(valores.length)
+console.log(valores.push(7))
+const novoValor = valores.splice(3, 1)
+console.log(novoValor.lenght)
+/*---Resumo
 Arrays são listas de elementos que podem ter qualquer tipo.
 Agrupamos esses itens usando colchetes [].
 Acessamos um item pelo índice (ou seja, sua posição na lista)
