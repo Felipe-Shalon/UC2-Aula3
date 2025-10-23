@@ -170,7 +170,7 @@ imprima no console o seu tipo:
 ● Bulbasaur (Planta e Veneno);
 ● Charmander (Fogo);
 ● Squirtle (Água);*/
-/*let pokemon = prompt("Digite um pokemon entre Bulbasaur, Charmander e Squirtle.")
+let pokemon = prompt("Digite um pokemon entre Bulbasaur, Charmander e Squirtle.")
 switch(pokemon.toLowerCase()){
     case "bulbasaur" :
         console.log("Planta e Veneno")
@@ -184,7 +184,7 @@ switch(pokemon.toLowerCase()){
     default :
     console.log("Pokemon não encontrado.")
     break
-}*/
+}
 /*Exercícios
 Escreva o programa do chapéu seletor que recebe a aluna e imprima no console a
 sua casa de Hogwarts:
@@ -192,7 +192,7 @@ sua casa de Hogwarts:
 ● Ana(Lufa-lufa);
 ● Luna(Corvinal);
 ● Narcisa(Sonserina)*/
-/*let aluna = prompt("Qual aluna de Harry Potter você é?")
+let aluna = prompt("Qual aluna de Harry Potter você é?")
 switch(aluna.toLowerCase()){ //Sempre ao usar toLowerCase, escrever o que estiver em case em letra minúscula
     case "hermione" :
         console.log("Você escolheu Hermione, sua casa é Grifinória.")
@@ -212,7 +212,7 @@ switch(aluna.toLowerCase()){ //Sempre ao usar toLowerCase, escrever o que estive
     default :
     console.log("Aluna não encontrada.")
     break
-}*/
+}
 /*Resumo
 Podemos realizar condições usando no JavaScript o if + else. Além disso,
 podemos usar o switch case.
@@ -249,11 +249,11 @@ const idade = Number(prompt("Digite sua idade")) >= 18
 const faculdade = prompt("Você faz faculdade?").toLowerCase() === "sim"*/
 /*Escreva um programa que receba estes parâmetros e imprima se a pessoa pode
 ou não estudar nesta faculdade. Receba os dados do usuário pelo prompt.*/
-/*if(ensino && !faculdade){
+if(ensino && !faculdade){
     console.log("Você pode estudar nessa faculdade")
 }else{
     console.log("Você não pode estudar nessa faculdade")
-}*/
+}
 /*Resumo
 
 Operadores de comparação são usados para se compararem valores de mais de
@@ -308,7 +308,7 @@ Sera indica o preco da maçã.
 c) Qual seria a mensagem impressa no console se comprasse
 `pera`e retirássemos o `break` que está logo acima do `default` ("BREAK PARA O ITEM c.")?
 */
-/*let fruta = prompt("Escolha uma fruta")
+let fruta = prompt("Escolha uma fruta")
 let preco 
 switch (fruta){
     case "Laranja" :
@@ -327,7 +327,7 @@ switch (fruta){
         preco = 5
         break;
 }
-console.log("O preço da fruta", fruta, " é ", "R$", preco)*/
+console.log("O preço da fruta", fruta, " é ", "R$", preco)
 /*3. Mensagem Secreta
 a) O que a primeira linha está fazendo?
 A primeira linha esta solicitando para o usuário digitar um número.
@@ -355,16 +355,16 @@ number para isso.*/
 /*c) Agora veja se essa idade do usuário corresponde à idade mínima que permite
 dirigir. Se sim, imprima no console `"Você pode dirigir"`, caso contrário, imprima
 `"Você não pode dirigir."`*/
-/*let idade = Number(prompt("Me diga sua idade."))
+let idade = Number(prompt("Me diga sua idade."))
 if (idade > 17){
 console.log("Você pode dirigir")
 } else {
     console.log("Você não pode dirigir.")
-}*/
+}
 /*5. Agora faça um programa que verifica que turno do dia um aluno estuda. Peça
 para digitar M (matutino) ou V (Vespertino) ou N (Noturno). Imprima no console a
 mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco if/else.*/
-/*let turno1 = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?").toLowerCase()
+let turno1 = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?").toLowerCase()
 let mensagem
 if (turno1 === "m") {
     mensagem = "Bom dia"
@@ -374,9 +374,9 @@ if (turno1 === "m") {
     mensagem = "Boa noite"
 } else {
     mensagem = "Turno inválido." }
-console.log(mensagem)*/
+console.log(mensagem)
 //6. Repita o exercício anterior, mas utilizando a estrutura de switch case agora.
-/*let turno = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?")
+let turno = prompt("Qual turno você estuda: M (matutino), V (espertino) ou N (noturno)?")
 switch (turno.toLowerCase()){
     case "m" :
         console.log("Bom dia.")
@@ -390,7 +390,7 @@ switch (turno.toLowerCase()){
     default:
         console.log("Turno não encontrado.")
         break;
-}*/
+}
 /*7. Considere a situação: você vai ao cinema com um amigo ou amiga, porém
 ele/ela só assistirá a um filme com você se ele for do gênero fantasia e se o
 ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuário qual o
@@ -398,27 +398,27 @@ gênero de filme que vão assistir e outra pergunta sobre o preço do ingresso,
 então verifique se seu amigo ou amiga vai topar assistir o filme. Caso positivo,
 imprima no console a mensagem: "Bom filme!", caso contrário, imprima "Escolha
 outro filme :("*/
-/*let genero = prompt("Qual gênero do filme?")
+let genero = prompt("Qual gênero do filme?")
 let ingresso = Number(prompt("Qual preço do ingresso?"))
 if (genero.toLowerCase() === "fantasia" && ingresso < 15) {//&& as duas condiçoes precisam ser verdadeiras
     console.log("Bom filme.")
 } else {
     console.log("Escolha outro filme")
-}*/
+}
 /*DESAFIO
 1. Modifique o código do exercício 7 de escrita de código para, antes de imprimir
 a mensagem "Bom filme!", pergunte ao usuário, pelo prompt qual lanchinho ele
 vai comprar (pipoca, chocolate, doces, etc) e imprima no console as mensagens
 "Bom filme!" e "Aproveite o seu [LANCHINHO]", trocando [LANCHINHO] pelo
 que o usuário colocou no input.*/
-/*let generoo = prompt("Qual gênero do filme?")
+let generoo = prompt("Qual gênero do filme?")
 let lanche = prompt("Qual lanche vai comprar para assistir o filme?")
 let ingressoo = Number(prompt("Qual preço do ingresso?"))
 if (generoo.toLowerCase() === "fantasia" && ingressoo <= 15) { //&& as duas condiçoes precisam ser verdadeiras
     console.log("Bom filme e aproveite a/o", lanche)
 } else {
     console.log("Escolha outro filme")
-}*/
+}
 
 /*2. Você foi contratado para criar um sistema de vendas de ingressos de jogos de
 um estádio de futebol. Para esta compra, o usuário deve fornecer algumas
