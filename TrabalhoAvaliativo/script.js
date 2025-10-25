@@ -1,3 +1,4 @@
+//Felipe Schunk e João Pedro Borba
 /*DESAFIO1 - A ESCOLHA DA FERRAMENTA
 Você precisa minerar um tipo de bloco, e a escolha da ferramenta correta
 afeta a velocidade.
