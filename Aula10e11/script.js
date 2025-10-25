@@ -249,11 +249,11 @@ const idade = Number(prompt("Digite sua idade")) >= 18
 const faculdade = prompt("Você faz faculdade?").toLowerCase() === "sim"*/
 /*Escreva um programa que receba estes parâmetros e imprima se a pessoa pode
 ou não estudar nesta faculdade. Receba os dados do usuário pelo prompt.*/
-if(ensino && !faculdade){
+/*if(ensino && !faculdade){
     console.log("Você pode estudar nessa faculdade")
 }else{
     console.log("Você não pode estudar nessa faculdade")
-}
+}*/
 /*Resumo
 
 Operadores de comparação são usados para se compararem valores de mais de
@@ -304,10 +304,10 @@ if (numero % 2 === 0){
 a) Para que serve o código?
 O código serve para indicar o valor da fruta escolhida pelo usuário
 b) Qual será a mensagem impressa no console, se o valor de fruta for `"Maçã"`?
-Sera indica o preco da maçã.
+Sera indicado o preco da maçã, que é 5, pois `"Maçã"` está escrito com crase `` ficando default.
 c) Qual seria a mensagem impressa no console se comprasse
 `pera`e retirássemos o `break` que está logo acima do `default` ("BREAK PARA O ITEM c.")?
-*/
+Preço da fruta pera é 5.*/
 let fruta = prompt("Escolha uma fruta")
 let preco 
 switch (fruta){
@@ -322,7 +322,7 @@ switch (fruta){
         break;
     case "Pêra" :
         preco = 5.5
-        break //BREAL PARA O ITEM C.
+        break //BREAk PARA O ITEM C.
     default:
         preco = 5
         break;
@@ -333,13 +333,13 @@ a) O que a primeira linha está fazendo?
 A primeira linha esta solicitando para o usuário digitar um número.
 b) Considere um usuário digitou o número 10. Qual será a mensagem do
 terminal? E se fosse o número -10?
-Se o número digitado for 10, ele ira passar no teste pois é maior que 0.
+Se o número digitado for 10, a mensagem sera que ele passou no teste pois é maior que 0.
 Se o numero digitado for -10 ele ira reprovar pois é menos que 0.
 c) Haverá algum erro no console? Justifique usando os conceitos de bloco ou
 escopo.
-Console.log(mensagem) deve estar dentro do escopo.
-*/
-/*const numero = Number(prompt("Digite o primeiro número."))
+Sim pois a variável foi definida dentro do if, quando ele fechar a variável não existirá mais.*/
+/*Console.log(mensagem) deve estar dentro do escopo.
+const numero = Number(prompt("Digite o primeiro número."))
 if (numero > 0){
     console.log("Esse número passou no teste")
     let mensagem = "Essa mensagem é secreta!!!"
