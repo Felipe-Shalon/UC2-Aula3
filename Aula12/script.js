@@ -106,9 +106,90 @@ Ex: Para o array [11, 15, 18, 14, 12, 13], a saída deve ser:
 "O maior número é 18" */
 let meusNumeros = [10, 20, 30, 40, 50, 60]
 let maiorNumero = 0
-for (let i = 0; i < 6; i++) {
-    if (meusNumeros < meusNumeros[i]) {
+for (let i = 0; i < meusNumeros.length; i++) {
+    if (maiorNumero < meusNumeros[i]) {
         maiorNumero = meusNumeros[i]
     }
 } 
 console.log(maiorNumero)
+/*Escreva um programa que receba um array com números e
+devolva qual a soma dos números pares.
+
+Ex: Para o array [11, 15, 18, 14, 12, 13], a saída deve ser: "A
+soma dos números pares é 44”*/
+let numeros = [11, 12, 13, 14, 15, 16]
+let somaPares = 0
+for (let i = 0; i < numeros.length; i++){  //numeros.lenght garante que o loop percorra todo o array
+    if (numeros[i] % 2 === 0){   //verifica se é par divindo por 2
+        somaPares = somaPares + numeros[i] //acumula o valor dos pares
+    }
+}
+console.log(`A soma dos números pares sé ${somaPares}`)
+
+/*TIPOS DE REPETIÇÕES
+---FOR OF FOR
+Uma forma de simplificar a leitura dos elementos do array
+é utilizando o loop for...of...
+
+O loop for...of percorre arrays e objetos, alocando o valor
+de cada posição do array em uma variável, permitindo
+executar alguma ação para cada valor distinto.
+
+
+const numeros = '["14", 67, 89, 15, 23]' Quantidade de repetições: tamanho do array (5) pois restou 5 numeros
+for (let numero"" of numeros''){ //numero requer a apenas um numero da const, e numeros aos demais
+console.log(numero)
+
+const numeros = '[14, "67", 89, 15, 23]'
+for (let numero"" of numeros''){
+console.log(numero)}//67
+
+{Exercícios - for of}
+Considere que você tem um array com várias palavras.
+Nossa tarefa é criar um programa para imprimi-las em
+uma só mensagem colocando um espaço entre elas.
+
+Ex: Para este array ["Oi", "sumido", "tudo", "bem?",
+"Saudades"], dar a mensagem "Oi sumido tudo bem?
+Saudades"*/
+const frase = ["Oi", "sumido", "tudo", "bem?", "Saudades"]
+let mensagem = " "
+for (let palavra of frase){
+    mensagem += palavra + " "
+}
+console.log(mensagem.trim())//trim() remove o último espaço extra.
+
+/*Recrie o exercício da soma de números pares utilizando
+for of.
+O programa recebe um array com números e devolve qual
+a soma dos números pares.
+Ex: Para o array [11, 15, 18, 14, 12, 13], a saída deve ser: "A
+soma dos números pares é 44” */
+let numerosArray = [11, 15, 18, 14, 12, 13]
+let somaDosPares = 0
+for (let numero of numerosArray){ //percorre diretamente cada valor do array(sem precisar de indice i)
+    if (numero % 2 === 0){ //verifica se o número é par
+        somaDosPares += numero //soma dos pares
+    }
+}
+console.log(`A soma dos números pares equivale a ${somaDosPares}`)
+/*Encontrar as Palavras Mais Longas em um Array
+Dado um array de palavras, use um loop for...of para
+encontrar e armazenar as palavras que têm o maior
+comprimento.
+Armazene as palavras mais longas em um array chamado
+palavrasMaisLongas.
+Se houver mais de uma palavra com o maior comprimento,
+inclua todas.*/
+const palavras = ["sol", "mar", "montanha", "nuvem", "floresta", "lua"]
+let maiorPalavra = 0
+let palavrasMaisLongas = [] //começa vazio e é atualizado conforme encontra palavras maiores.
+for (let palavra of palavras){
+    if (palavra.length > maiorTamanho){ //encontrou uma palavra mais longa --> atualiza
+        maiorTamanho = palavra.length
+        palavrasMaisLongas = [palavra]
+    } else if (palavra.length === maiorTamanho){ //tem o mesmo tamanho da maior --> adiciona
+        palavrasMaisLongas.push(palavra)//se outra palavra tem o mesmo comprimento, ela é adicionada com .push
+    }
+}
+console.log("Palavras mais longas:", palavrasMaisLongas)
