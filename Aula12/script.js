@@ -36,7 +36,7 @@ verdadeiro   ↓  falso    //Isso é criar um caminho até a resposta
 
 */
 /*let i = 0 //começo
-while(i<=3){ //enquanto a condição for verdade, que no caso é o i<=9
+while(i<=3){ //enquanto a condição for verdade, que no caso é o i<=3
 //tem que ter em mente que o 0 conta, então se quer repetir quatro vezes tem de ser <=3, igual menor que três,
 //pois fica 0<=3, 1<=3, 2<=3 e 3<=3, todos são true, então fica quatro comparações
     console.log("Loop:", i)
@@ -69,19 +69,19 @@ imprimir no console a soma de todos os números por ele
 indicados
 Ex.: Vamos supor que ele coloque: 10, 3, 50, 7, 0.
 O resultado deve ser: 70 */
-/*let numero
+let numero
 let soma = 0
 while(numero!==0){
     numero = Number(prompt("Digite um número."))
     soma += numero
 }
-console.log("O resultado é:", soma)*/
+console.log("O resultado é:", soma)
 //ele vai ficar somando todos os números digitados,
 //quando for colocado 0 ele encerra, mostrando o resultado final da soma dos números digitados
 
 //===Do While primeiro executa a ação, depois testa condição
-//while testa condição e fica em looping (rever em casa diferença entre do while e while)
-/*let c = 1 //definição de variável e valor
+//while testa condição e fica em looping (rever em casa diferença entre Do While e while)
+let c = 1 //definição de variável e valor
 do{ //repetição do while
 console.log("O valor de C é:", c)
 c++ //ação
@@ -104,27 +104,27 @@ devolva qual o maior dentro dele.
 
 Ex: Para o array [11, 15, 18, 14, 12, 13], a saída deve ser:
 "O maior número é 18" */
-/*let meusNumeros = [10, 20, 30, 40, 50, 60]
+let meusNumeros = [10, 20, 30, 40, 50, 60]
 let maiorNumero = 0
 for (let i = 0; i < meusNumeros.length; i++) {
     if (maiorNumero < meusNumeros[i]) {
         maiorNumero = meusNumeros[i]
     }
 } 
-console.log(maiorNumero)*/
+console.log(maiorNumero)
 /*Escreva um programa que receba um array com números e
 devolva qual a soma dos números pares.
 
 Ex: Para o array [11, 15, 18, 14, 12, 13], a saída deve ser: "A
 soma dos números pares é 44”*/
-/*let numeros = [11, 12, 13, 14, 15, 16]
+let numeros = [11, 12, 13, 14, 15, 16]
 let somaPares = 0
 for (let i = 0; i < numeros.length; i++){  //numeros.lenght garante que o loop percorra todo o array
     if (numeros[i] % 2 === 0){   //verifica se é par divindo por 2
         somaPares = somaPares + numeros[i] //acumula o valor dos pares
     }
 }
-console.log(`A soma dos números pares sé ${somaPares}`)*/
+console.log(`A soma dos números pares sé ${somaPares}`)
 
 /*TIPOS DE REPETIÇÕES
 ---FOR OF FOR
@@ -170,14 +170,14 @@ O programa recebe um array com números e devolve qual
 a soma dos números pares.
 Ex: Para o array [11, 15, 18, 14, 12, 13], a saída deve ser: "A
 soma dos números pares é 44” */
-/*let numerosArray = [11, 15, 18, 14, 12, 13]
+let numerosArray = [11, 15, 18, 14, 12, 13]
 let somaDosPares = 0
 for (let i = 0; i <= 5; i++){ //percorre diretamente cada valor do array(sem precisar de indice i)
     if (meuArray[i] % 2 === 0){ //verifica se o número é par
         somaDosPares += meuArray[i] //soma dos pares
     }
 }
-console.log(`A soma dos números pares equivale a ${somaDosPares}`)*/
+console.log(`A soma dos números pares equivale a ${somaDosPares}`)
 /*Encontrar as Palavras Mais Longas em um Array
 Dado um array de palavras, use um loop for...of para
 encontrar e armazenar as palavras que têm o maior
@@ -186,7 +186,8 @@ Armazene as palavras mais longas em um array chamado
 palavrasMaisLongas.
 Se houver mais de uma palavra com o maior comprimento,
 inclua todas.*/
-/*const palavras = ["sol", "mar", "montanha", "nuvem", "floresta", "lua"]
+/*
+const palavras = ["sol", "mar", "montanha", "nuvem", "floresta", "lua"]
 let maiorPalavra = 0
 let palavrasMaisLongas = [] //começa vazio e é atualizado conforme encontra palavras maiores.
 for (let palavra of palavras){
@@ -197,4 +198,15 @@ for (let palavra of palavras){
         palavrasMaisLongas.push(palavra)//se outra palavra tem o mesmo comprimento, ela é adicionada com .push
     }
 }
-console.log("Palavras mais longas:", palavrasMaisLongas)*/
+console.log("Palavras mais longas:", palavrasMaisLongas)
+*/
+
+let num = 100 // numero digitado
+let somaNum = 0 // armazena o valor da zoma
+
+while(num != 0){ // enquanto o numero digitado for diferente de zero
+    num = Number(prompt("Digite um número"))// pergunta numero pro usuario
+    somaNum += num; // soma o valor digitado
+}//final do loop acabou
+
+console.log(somaNum) //exibir o soma total da soma

@@ -111,7 +111,7 @@ Todo código da ação vai entre chaves { }
 
 if + else + if
 Todo código da ação vai entre chaves { }*/
-/*let condicaoA = false
+let condicaoA = false
 let condicaoB = true
 let condicaoC = true
 if(condicaoA){
@@ -123,10 +123,10 @@ else if(condicaoC){
     console.log("Entrou no ElSE IF 2")
 }
 else
-console.log("Entrou no ELSE")*/
+console.log("Entrou no ELSE")
 //1. Crie um programa que:
 //a) Recebe 2 números (chamaremos de num1 e num2)
-/*const numeroA = Number(prompt("Digite o primeiro número."))
+const numeroA = Number(prompt("Digite o primeiro número."))
 const numeroB = Number(prompt("Digite o segundo número."))
 //b) Compara esses números entre si:
 const resultado = numeroA === numeroB
@@ -138,7 +138,7 @@ else if(numeroA < numeroB){
     console.log("O primeiro número é menor que o primeiro número")
 }
 else
-console.log("Os números são iguais")*/ //PRESTE ATENÇÃO NOS SINAIS DE MAIOR > MENOR < IGUAIS ETC
+console.log("Os números são iguais")//PRESTE ATENÇÃO NOS SINAIS DE MAIOR > MENOR < IGUAIS ETC
 /*Vimos como a gente pode pedir para o computador realizar condições usando o
 JavaScript:
 Condicional simples (if)
@@ -146,7 +146,7 @@ Condicional composta (if/else)
 Condicional aninhada (if + else if + else)*/
 
 //SWITCH CASE
-/*let paisOrigem = prompt("Digite o seu país de origem")
+let paisOrigem = prompt("Digite o seu país de origem")
 switch(paisOrigem){
     case "Brasil" :
         console.log("Nacionalidade brasileira")
@@ -163,7 +163,7 @@ switch(paisOrigem){
     default :
     console.log("Nacionalidade não encontrada")
     break
-}*/
+}
 /*Exercícios
 Escreva um programa que receba o Pokémon inicial escolhido pela pessoa e
 imprima no console o seu tipo:
@@ -228,7 +228,7 @@ Relembrando Operadores Lógicos
 ● ! : NOT negação - sua função é simplesmente inverter os valores.
 Como os operadores lógicos retornam booleanos, conseguimos usá-los
 diretamente na condição dos blocos if/else*/
-/*let condicao1 = true
+let condicao1 = true
 let condicao2 = true
 if (condicao1&&condicao2){
     console.log("Executou if do operador && AND")
@@ -238,7 +238,7 @@ if (!condicao1 || condicao2){
 }
 if(!condicao1){
     console.log("Executou o if do operador ! NOT")
-}*/
+}
 /*Exercícios
 Uma pessoa pode estudar em uma faculdade se:*/
 //● Tiver concluído o ensino médio;
@@ -249,11 +249,11 @@ const idade = Number(prompt("Digite sua idade")) >= 18
 const faculdade = prompt("Você faz faculdade?").toLowerCase() === "sim"*/
 /*Escreva um programa que receba estes parâmetros e imprima se a pessoa pode
 ou não estudar nesta faculdade. Receba os dados do usuário pelo prompt.*/
-/*if(ensino && !faculdade){
+if(ensino && !faculdade){
     console.log("Você pode estudar nessa faculdade")
 }else{
     console.log("Você não pode estudar nessa faculdade")
-}*/
+}
 /*Resumo
 
 Operadores de comparação são usados para se compararem valores de mais de
@@ -291,13 +291,13 @@ Numeros divisiveis por 2.
 c) Para que tipos de números a mensagem é "Não passou no teste"?
 Numeros nao divisiveis por 2*/
 
-/*const respostaDoUsuario = prompt("Digite o número que você quer testar")
+const respostaDoUsuario = prompt("Digite o número que você quer testar")
 const numero = Number(respostaDoUsuario)
 if (numero % 2 === 0){
     console.log("Passou no teste.")
 } else {
     console.log("Não passou no teste.")
-}*/
+}
 
 /*Exercícios de interpretação
 2. Mercado
@@ -338,14 +338,14 @@ Se o numero digitado for -10 ele ira reprovar pois é menos que 0.
 c) Haverá algum erro no console? Justifique usando os conceitos de bloco ou
 escopo.
 Sim pois a variável foi definida dentro do if, quando ele fechar a variável não existirá mais.*/
-/*Console.log(mensagem) deve estar dentro do escopo.
+/*Console.log(mensagem) deve estar dentro do escopo.*/
 const numero = Number(prompt("Digite o primeiro número."))
 if (numero > 0){
     console.log("Esse número passou no teste")
     let mensagem = "Essa mensagem é secreta!!!"
     
 }
-console.log(mensagem)*/
+console.log(mensagem)
 /*Exercícios de escrita de código
 4. Faça um programa que pergunta ao usuário qual a idade dele e imprima no
 console se ele/ela pode dirigir (apenas maiores de idade).*/

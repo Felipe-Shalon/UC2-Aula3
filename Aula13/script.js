@@ -65,8 +65,9 @@ d) Escreva um programa que crie um novo array contendo strings, da seguinte
 forma: "O elemento do índex i é: numero". Depois, imprima este novo array.
 e) Escreva um programa que imprima no console o maior e o menor
 números contidos no array original*/
-let arrayOriginal = [10, 20, 30, 40, 50]
+const arrayOriginal = [5, 10, 15, 20, 25]
+const novoArray = []
 console.log(arrayOriginal)
-if (calculo1 = arrayOriginal % 10){
-    console.log(calculo1)
-} else if ()
+for (let arrays of arrayOriginal){
+    console.log(arrays / 10)
+}
