@@ -21,7 +21,7 @@ usando um loop for. */
 /*Soma de Números:
 Peça ao usuário para inserir 5 números. Use um loop for para somar esses números e exiba
 o total.*/
-let numeros = Number(prompt("Digite 5 números."))
+
 
 /*Média de Notas:
 Peça ao usuário para inserir as notas de 5 alunos e calcule a média. Use um loop for para
