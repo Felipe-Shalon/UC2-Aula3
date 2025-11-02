@@ -13,11 +13,14 @@ let meusNumeros1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1
 let arrayPares = []
 for(let numero of meusNumeros1){if(numero%2===0){arrayPares.push(numero)}}
 console.log(arrayPares)
+
 /*Tabuada:
 Peça ao usuário um número usando prompt e exiba a tabuada desse número de 1 a 10
 usando um loop for. */
-
-
+/*let numero = Number(prompt("Digite um número."))
+for(let i = 1; i <= 10, i++) {
+    console.log(number * i)
+}*/
 /*Soma de Números:
 Peça ao usuário para inserir 5 números. Use um loop for para somar esses números e exiba
 o total.*/
