@@ -144,11 +144,11 @@ const numeros = '[14, "67", 89, 15, 23]'
 for (let numero"" of numeros''){
 console.log(numero)}//67
 EXEMPLOS*/
-/*const numbers = [100, 7, 4, 8, 10, 3, 20, 777,]
+const numbers = [100, 7, 4, 8, 10, 3, 20, 777,]
 for(let number of numbers){
     console.log(number)
     console.log("O número é: ", number)
-}*/
+}
 /*{Exercícios - for of}
 Considere que você tem um array com várias palavras.
 Nossa tarefa é criar um programa para imprimi-las em

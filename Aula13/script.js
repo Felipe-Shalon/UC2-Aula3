@@ -45,7 +45,7 @@ a) Se a quantidade for 0, imprima no console "Que pena! Você pode adotar um pet
 b) Se a quantidade for maior que 0, solicite que o usuário digite
 os nomes deles, um por um, e guarde esses nomes em um array.
 c) Por fim, imprima o array com os nomes dos bichinhos no console.*/
-/*const qntdBichosEstimacao = Number(prompt("Quantos bichos de estimação você tem?"))
+const qntdBichosEstimacao = Number(prompt("Quantos bichos de estimação você tem?"))
 let nomeDosBichos = []
 if (qntdBichosEstimacao === 0){
     console.log("Que pena! Você pode adotar um pet.")
@@ -55,7 +55,7 @@ if (qntdBichosEstimacao === 0){
         nomeDosBichos.push(nome)
     }
     console.log("Os nomes dos seus pets são: ", nomeDosBichos)
-}*/
+}
 /*Exercícios de escrita de código
 2.Considere que você tenha acesso a um array (chamado de 'array original') que é
 composto somente de números. Baseando-se nisso, crie um programa para cada um

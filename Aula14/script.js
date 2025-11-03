@@ -17,18 +17,22 @@ console.log(arrayPares)
 /*Tabuada:
 Peça ao usuário um número usando prompt e exiba a tabuada desse número de 1 a 10
 usando um loop for. */
-/*let numero = Number(prompt("Digite um número."))
-for(let i = 1; i <= 10, i++) {
+let numero = Number(prompt("Digite um número."))
+for(let i = 1; i <= 10; i++) {
     console.log(number * i)
-}*/
+}
 /*Soma de Números:
 Peça ao usuário para inserir 5 números. Use um loop for para somar esses números e exiba
 o total.*/
-
+let numeros = Number(prompt("Digite 5 números."))
+    for(let numero of numeros){
+        console.log("A soma total é", numero)
+    }
 
 /*Média de Notas:
 Peça ao usuário para inserir as notas de 5 alunos e calcule a média. Use um loop for para
 obter as notas e calcular a média.*/
+
 
 /*Jogo da Forca:
 Crie um simples jogo da forca. O programa deve escolher uma palavra aleatória de uma
