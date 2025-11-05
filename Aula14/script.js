@@ -39,6 +39,7 @@ Crie um simples jogo da forca. O programa deve escolher uma palavra aleatória d
 lista e pedir ao usuário para adivinhar as letras. Mostre a palavra com as letras adivinhadas
 e espaços para as não adivinhadas. Permita um número limitado de tentativas.*/
 
+
 /*Validador de CPF:
 Escreva um programa que peça ao usuário para inserir um CPF e use um loop para validar
 os dígitos verificadores do CPF.*/
