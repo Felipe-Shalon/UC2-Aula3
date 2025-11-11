@@ -165,7 +165,7 @@ function calculaArea(altura, largura){
 }
 //Atribui retorno à uma variável
 // calculaArea(2, 3) = chamadas
-const areaCalculada = calculaArea(2, 3)
+const areaCalculada1 = calculaArea(2, 3)
 //Imprimi no console.log
 console.log(calculaArea(2, 3))
 /*
@@ -200,11 +200,11 @@ Expressões de funções são uma forma diferente (mas bem
 parecida) de se declarar funções.
 Deve ser atribuída a uma variável e é invocada da mesma forma
 que a declaração, mas usando o nome da variável atribuída. */
-const areaCalculada = function(altura, largura){
+const areaCalculada2 = function(altura, largura){
     const area = altura * largura
     return area
 }
-const areaCalculada = calculaArea(2, 3)
+const areaCalculada3 = calculaArea(2, 3)
 
 /*ARROW FUNCTIONS
 Tipo de expressão de função com sintaxe simplificada.
