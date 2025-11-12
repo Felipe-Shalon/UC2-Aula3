@@ -103,7 +103,7 @@ seu respectivo personagem
 ● Altere a primeira pessoa do elenco por "Xuxa".
 
 ● Imprima no console todas as propriedades do objeto. */
-const filme1 = {
+/*const filme1 = {
     direcao : "Quentin Tarantino",
     nome : "Bastardos Inglórios",
     lancamento : 2009,
@@ -111,4 +111,67 @@ const filme1 = {
     personagens : "Hans Landa, Tenente Aldo Raine e Sargento Donny Donowitz",
     assistido: "sim"
 }
-console.log("Filme", filme1["nome"], "com direção de", filme1["direcao"], ", lançado em", filme1["lancamento"], ", contendo no elenco", filme1.elenco, "sendo assistido", filme1.assistido)
+console.log()*/
+/*Crie uma função que receba um objeto de pessoa (Exercício 2) e crie
+um novo objeto mantendo as propriedades originais e acrescentando:
+● Uma propriedade com a lista de suas comidas preferidas;
+● Uma propriedade que seja um objeto, com nome e idade, para
+representar o melhor amigo da pessoa.
+● Ainda na função, imprima no console as propriedades desse objeto
+seguindo o modelo abaixo:
+"O nome da pessoa é ___ e suas comidas preferidas são ___, ___ e ___. Seu
+melhor amigo se chama ___ e tem ___ anos" */
+function novoObjeto(objeto) {
+    const colega = {
+        ...objeto,
+        comidasPreferidas: ["Lasanha", "Pizza", "Churrasco"],
+        melhorAmigo: {
+            nomeAmigo: "Gustavo",
+            idadeAmigo: 15
+        }
+    };
+  console.log(`O nome da pessoa é ${colega.nome} e  suas comidas preferidas são ${colega.comidasPreferidas}. Seu melhor amigo se chama ${colega.melhorAmigo.nomeAmigo} e tem ${colega.melhorAmigo.idadeAmigo} anos`) 
+}
+novoObjeto()
+
+/*Crie um array chamado personagens que contenha pelo menos 3 objetos de
+personagens. Cada objeto deve ter as propriedades nome, idade, estilo, jutsus: Uma
+lista de poderes que o personagem possui.*/
+const personagens =[ {
+    nome: "Naruto Uzumaki",
+    idade: 17,
+    estilo: "ninjutsu e taijuts",
+    jutsus: "Rasengan, Rasenshuriken e Modo Sennin" },
+    {
+        nome : "Sasuke Uchiha",
+        idade : 17,
+        estilo: "Ninjutsu e Genjutsu",
+        jutsus: "Bola de Fogo, Susanoo e Chidori"
+    }, {
+        nome: "Itachi Uchiha",
+        idade: 21,
+        estilo: "genjutsu",
+        jutsus: "Susanoo, Tsukuyomi e Amaterasu"
+    }
+]
+/*Crie uma função chamada adicionarPersonagem que adicione um novo personagem
+ao array personagens. A função deve receber um objeto com as propriedades nome,
+idade, classe e poderes.*/
+function adicionarPersonagem(){
+    const novoPersonagem = {
+        nome: "Shikamaru",
+        idade: 17,
+        classe: "Shinobi Jounnin",
+        poderes: "Estragulamento das Sombras e Costura das Sombras"
+    }
+}
+
+/*Crie uma função chamada buscarPersonagem que recebe um nome e retorna o
+personagem correspondente do array personagens. Se o personagem não for
+encontrado, a função deve retornar uma mensagem indicando isso.*/
+
+/*Crie uma função chamada listarPersonagens que imprime na tela a lista de todos os
+personagens com seus detalhes (nome, idade, estilo e jutsus). */
+
+
+
