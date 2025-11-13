@@ -137,39 +137,55 @@ novoObjeto()
 /*Crie um array chamado personagens que contenha pelo menos 3 objetos de
 personagens. Cada objeto deve ter as propriedades nome, idade, estilo, jutsus: Uma
 lista de poderes que o personagem possui.*/
-const personagens =[ {
+/*let personagens =[ {
     nome: "Naruto Uzumaki",
     idade: 17,
-    estilo: "ninjutsu e taijuts",
-    jutsus: "Rasengan, Rasenshuriken e Modo Sennin" },
+    estilo: "ninjutsu",
+    jutsus: ["Rasengan", "Rasenshuriken", "Modo Sennin"] }, //entre [] pq é uma lista e não uma frase
     {
         nome : "Sasuke Uchiha",
         idade : 17,
         estilo: "Ninjutsu e Genjutsu",
-        jutsus: "Bola de Fogo, Susanoo e Chidori"
+        jutsus: ["Bola de Fogo", "Susanoo","Chidori"]
     }, {
         nome: "Itachi Uchiha",
         idade: 21,
         estilo: "genjutsu",
-        jutsus: "Susanoo, Tsukuyomi e Amaterasu"
+        jutsus: ["Susanoo", "Tsukuyomi", "Amaterasu"]
     }
-]
+] */
 /*Crie uma função chamada adicionarPersonagem que adicione um novo personagem
 ao array personagens. A função deve receber um objeto com as propriedades nome,
 idade, classe e poderes.*/
-function adicionarPersonagem(){
-    const novoPersonagem = {
-        nome: "Shikamaru",
-        idade: 17,
-        classe: "Shinobi Jounnin",
-        poderes: "Estragulamento das Sombras e Costura das Sombras"
-    }
+/*function adicionarPersonagem(perso){
+    personagens.push(perso)
+    console.log(`o personagem ${perso.nome} foi adicionado`) //perso.nome pq vai pegar o personagem da lista lá acima
 }
-
+const personagem={
+    nome: "Lee",
+    idade: 17,
+    estilo: "Taijutsu",
+    jutsus: ["Lótus", "Furacão"]
+} 
+adicionarPersonagem(personagem) */
 /*Crie uma função chamada buscarPersonagem que recebe um nome e retorna o
 personagem correspondente do array personagens. Se o personagem não for
 encontrado, a função deve retornar uma mensagem indicando isso.*/
-
+const personagens = [
+    {nome: "Naruto Uzumaki", idade: 17, estilo: "Ninjutsu", jutsu: "Rasengan"},
+    {nome: "Sasuke Uchiha", idade: 17, estilo: "Genjutsu", jutsu: "Chidori"},
+    {nome: "Itachi Uchiha", idade: 21, estilo: "Genjutsu", jutsu: "Susanoo"}
+    
+]
+function buscarPersonagem(nome){
+    const personagemEscontrado = personagens.find(personagem => personagem.nome === nome)
+    if (personagemEscontrado){
+        return personagemEscontrado
+    } else {
+        return `Personagem "${nome}" não foi encontrado.`
+    }
+}
+console.log(buscarPersonagem("naruto uzumaki"));
 /*Crie uma função chamada listarPersonagens que imprime na tela a lista de todos os
 personagens com seus detalhes (nome, idade, estilo e jutsus). */
 
