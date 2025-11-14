@@ -71,9 +71,53 @@ const pessoa = {
     apelidos: ["Mestre", "Prof", "Lu"]
 }
 //Exemplo de saída
-"Eu sou Lucas, mas pode me chamar de: Mestre, Prof ou Lu" */
-const pessoa1 = {
-    nome: "Lionel Messi",
-    apelidos: ["Gênio", "Baixinho", "GOAT"]
+"Eu sou Lucas, mas pode me chamar de: Mestre, Prof ou Lu" 
+
+b) Agora, usando o operador spread, crie um novo objeto mantendo
+o valor da propriedade nome, mas com uma nova lista de três
+apelidos. Depois, chame a função feita no item anterior passando
+como argumento o novo objeto*/
+let pessoa = {
+    nome: "Felipe Schunk",
+    apelidos: ["Lipe", "Schunk", "Fê"]
 }
-console.log(`Eu sou ${pessoa1.nome}, mas pode me chamar de: ${pessoa1.apelidos[0]}, ${pessoa1.apelidos[1]} ou ${pessoa1.apelidos[2]}`)
+function imprimirOjeto(objeto) {
+    console.log(`EU sou ${objeto.nome}, mas pode me chamar de: ${objeto.apelidos[0]}, ${objeto.apelidos[1]} ou ${objeto.apelidos[2]}`)
+}
+
+imprimirOjeto(pessoa)
+
+let pessoa2 = {
+    ...pessoa,
+    apelidos: ["Phili", "Fefo", "Fips"]
+}
+
+imprimirOjeto(pessoa2)
+
+/*2. Resolva os passos a seguir:
+a) Crie dois objetos diferentes com as seguintes propriedades: nome, idade e
+profissão.
+b) Escreva uma função que receba um objeto de cada vez e retorne um array com as
+seguintes informações:
+1. O valor de nome;
+2. O numero de caracteres do valor nome;
+3. O valor de idade;
+4. O valor de profissão;
+5. O número de caracteres do valor profissão; */
+//a
+let objeto1 = {
+    nome: "Felipe",
+    idade: 26,
+    profissão: "Auxiliar"
+}
+let objeto2 = {
+    nome: "Carla",
+    idade: 55,
+    profissão: "Auxiliar"
+}
+function apresentar(pessoaInfo1, pessoaInfo2) {
+    infoArray = [pessoaInfo1.nome, pessoaInfo1.idade, pessoaInfo1.profissão, pessoaInfo1.profissão.length, pessoaInfo2.nome, pessoaInfo2.idade, pessoaInfo2.profissão, pessoaInfo2.profissão.length]
+    return infoArray.join()
+}
+
+console.log(apresentar(pessoa1, pessoa2))
