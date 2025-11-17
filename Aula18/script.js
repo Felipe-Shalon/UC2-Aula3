@@ -77,7 +77,7 @@ b) Agora, usando o operador spread, crie um novo objeto mantendo
 o valor da propriedade nome, mas com uma nova lista de três
 apelidos. Depois, chame a função feita no item anterior passando
 como argumento o novo objeto*/
-let pessoa = {
+let pessoa1 = {
     nome: "Felipe Schunk",
     apelidos: ["Lipe", "Schunk", "Fê"]
 }
@@ -85,7 +85,7 @@ function imprimirOjeto(objeto) {
     console.log(`EU sou ${objeto.nome}, mas pode me chamar de: ${objeto.apelidos[0]}, ${objeto.apelidos[1]} ou ${objeto.apelidos[2]}`)
 }
 
-imprimirOjeto(pessoa)
+imprimirOjeto(pessoa1)
 
 let pessoa2 = {
     ...pessoa,
