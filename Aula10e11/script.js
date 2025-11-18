@@ -339,8 +339,8 @@ c) Haverá algum erro no console? Justifique usando os conceitos de bloco ou
 escopo.
 Sim pois a variável foi definida dentro do if, quando ele fechar a variável não existirá mais.*/
 /*Console.log(mensagem) deve estar dentro do escopo.*/
-const numero = Number(prompt("Digite o primeiro número."))
-if (numero > 0){
+const numero1 = Number(prompt("Digite o primeiro número."))
+if (numero1 > 0){
     console.log("Esse número passou no teste")
     let mensagem = "Essa mensagem é secreta!!!"
     

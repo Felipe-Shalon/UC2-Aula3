@@ -153,3 +153,4 @@ let navio = [
     [0, 0, 1, 1, 1, 1, 1, 0, 0, 0]
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ]
+let numero = Number(prompt("Diga um número"))
