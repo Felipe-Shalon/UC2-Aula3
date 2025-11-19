@@ -28,6 +28,49 @@ i. Eu gosto de cenoura //TRUE
 ii. CENOURA é bom pra vista //TRUE
 iii. Cenouras crescem na terra //TRUE PQ CENOURAs
 
+/*Exercícios de escrita de código
+1.Escreva as funções explicadas abaixo:
+a) A função não deve receber nenhum parâmetro e deve imprimir uma mensagem falando algumas 
+informações sobre você, como:
+"Eu sou Caio, tenho 23 anos, moro em São Paulo e sou estudante"
+Troque o nome, idade, cidade e se é estudante ou não por informações sobre você.
+Lembrando que a função não possui entradas, apenas imprime essa mensagem. */
+function sobreMim() {
+    console.log("Eu sou Felipe, tenho 23 anos, moro em São Leopoldo (RS) e sou estudante")
+}
+sobreMim()
+
+/*2. Escreva as funções explicadas abaixo:
+a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função,
+faça a soma das duas entradas e retorne o resultado. Invoque a função e imprima no
+console o resultado. */
+function doisNumeros(numero1, numero2) {
+    const soma = numero1 + numero2
+    return soma
+}
+console.log(doisNumeros(2, 4))
+/*b) Faça uma função que recebe 2 números e retorne um booleano que informa se o
+primeiro número é maior ou igual ao segundo. */
+function recebeNumeros(num1, num2) {
+    return num1 >= num2
+}
+console.log(recebeNumeros(5, 2))
+/*c) Escreva uma função que receba um número e devolva um booleano indicando se
+ele é par ou não*/
+function parOuImpar(numero) {
+    return numero % 2 === 0
+}
+console.log(parOuImpar(10))
+/*d) Faça uma função que recebe uma mensagem(string) como parâmetro e imprima o
+tamanho dessa mensagem, juntamente com uma versão dela em letras maiúsculas.*/
+let mensagem = "Boa noite"
+
+function aMensagem(msg) {
+    console.log(msg.length)
+    console.log(msg.toUpperCase())
+}
+console.log(aMensagem(mensagem))
+
 /*3. Crie uma função para cada uma das operações básicas (soma, subtração,
 multiplicação e divisão). Em seguida, peça para o usuário inserir dois
 números e chame essas 4 funções com esses valores inputados pelo
@@ -49,11 +92,32 @@ console.log("Diferença:", num1 - num2)
 console.log("Multiplicação:", num1 * num2)
 console.log("Divisão:", num1 / num2)
 
-/*Exercícios de escrita de código
-1.Escreva as funções explicadas abaixo:
-a) A função não deve receber nenhum parâmetro e deve imprimir uma mensagem falando algumas 
-informações sobre você, como:
-"Eu sou Caio, tenho 23 anos, moro em São Paulo e sou estudante"
+/*{Desafios}
+1. Funções são trechos de códigos como quaisquer outros mas que
+podemos acessá-los mais de uma vez ao longo do código através de
+invocações/chamadas. Então, funções podem chamar/invocar outras
+funções também. Sua tarefa é escrever duas funções
 
-Troque o nome, idade, cidade e se é estudante ou não por informações sobre você.
-Lembrando que a função não possui entradas, apenas imprime essa mensagem. */
+a) Escreva uma arrow function que recebe um parâmetro e imprime no
+console esse parâmetro.
+b) Escreva outra arrow function que recebe dois valores como parâmetros
+mas nenhum retorno. Faça a soma entre esses valores e chame a sua
+primeira função mandando este resultado da soma como entrada para
+
+imprimi-lo
+
+{Desafios}
+2. Faça um Inventário de Personagem.
+Escreva funções para adicionar, remover e listar os itens no inventário de um
+personagem.
+Crie uma função adicionarItem(inventario, item) que recebe um array inventario e uma
+string item, adiciona o item ao inventário, se o inventário já tiver 5 itens, a função deve
+exibir uma mensagem dizendo que o inventário está cheio e retorna o inventário
+atualizado.
+Crie uma função removerItem(inventario, item) que recebe um array inventario e uma
+string item, remove o item do inventário, se o item não estiver no inventário, a função
+deve exibir uma mensagem dizendo que o item não foi encontrado e retorna o inventário
+atualizado.
+Crie uma função listarItens(inventario) que recebe um array inventario, exibe todos os
+itens do inventário e se o inventário estiver vazio, exibe uma mensagem
+dizendo que o inventário está vazio. */

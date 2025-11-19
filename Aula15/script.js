@@ -257,10 +257,8 @@ let somaNumeros = (num1, num2) => {
     return num1 + num2
 } */
 
-/*● A expressão de função só pode ser invocada depois da sua
-declaração (const, let)
-● A declaração de função pode ser chamada de qualquer parte do
-código, mesmo antes de sua declaração efetiva (function)
+/*● A expressão de função só pode ser invocada depois da sua declaração (const, let)
+● A declaração de função pode ser chamada de qualquer parte do código, mesmo antes de sua declaração efetiva (function)
 ● Mas evite usar coisas fora da ordem! O código fica bem mais
 confuso
 
