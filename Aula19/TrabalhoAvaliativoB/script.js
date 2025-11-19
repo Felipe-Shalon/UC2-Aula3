@@ -1,6 +1,6 @@
 /*Cadastro de Personagens: O sistema deverá armazenar informações sobre os
 personagens, como nome, classe, nível, pontos de vida (HP) e habilidades. Os
-personagens devem ser armazenados. 
+personagens devem ser armazenados.
 
 Ações dos Personagens: O sistema deve permitir que os personagens realizem ações
 (como atacar, defender e usar habilidades especiais).
@@ -8,13 +8,13 @@ Ações dos Personagens: O sistema deve permitir que os personagens realizem aç
 Histórico de Ações: O sistema deverá manter um histórico das ações realizadas por cada
 personagem. Esse histórico será armazenado em um array dentro do objeto de cada
 personagem.*/
-/*let personagens = [ {
+let personagens = [ {
     nome: "Frodo Bolseiro",
     classe: "Ladino",
     nivel: 3,
     hp: 25,
     habilidades: ["Furtividade inigualável", "Resistência à Corrupção do Anel", "Sorte de Hobbit"],
-    historicoAcoes: []
+    historicoAcoes: [],
 }, {
     nome: "Gandalf",
     classe: "Mago",
@@ -30,11 +30,11 @@ personagem.*/
     habilidades: ["Arquearia Impecável", "Sentidos Élficos", "Furtividade em florestas"],
     historicoAcoes: []
 }]
-console.log(personagens) */
+console.log(personagens)
 /*Busca de Personagens por Nome: O sistema deverá ter uma função que permita ao
 usuário buscar um personagem pelo nome. Se encontrado, o personagem deve ser exibido
 com todos os detalhes. */
-/*function buscarPersonagem(nome){
+function buscarPersonagem(nome){
     const personagemEscontrado = personagens.find(personagem => personagem.nome === nome)
     if (personagemEscontrado){
         return personagemEscontrado
@@ -42,11 +42,11 @@ com todos os detalhes. */
         return `Personagem "${nome}" não foi encontrado.`
     }
 }
-console.log(buscarPersonagem("Gandalf")); */
+console.log(buscarPersonagem("Gandalf"))
 /*Exclusão de Personagens: Implementar uma função que permita excluir personagens do
 jogo. Essa operação deve ser eficiente, levando em consideração a estrutura de dados
 escolhida. */
-/*function excluirPersonagem(nome){
+function excluirPersonagem(nome){
     const indicePersonagem = personagens.findIndex(personagem => personagem.nome === nome)
     if (indicePersonagem > 0){
         personagens.splice(indicePersonagem, 1);
@@ -56,4 +56,25 @@ escolhida. */
 }
 }
 console.log(excluirPersonagem("Legolas"))
-console.log(personagens)*/
+console.log(personagens)
+/*
+function exclusaoPersonagem(){
+    personagens.pop()
+    console.log(personagens)
+}
+excluirPersonagem() */
+
+//Listar personagens
+function listarPersonagens(){
+    for(let personagem of personagens){
+        console.log(personagem)
+    }
+}
+
+//verificar status
+function verificaStatus(personagens){
+    console.log(personagens.nome)
+    console.log(personagens.hp)
+    console.log(personagens.nivel)
+}
+verificaStatus(personagens[0])
